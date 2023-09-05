@@ -28,6 +28,7 @@ body {
   grid-template-rows: repeat(2,300px);
   color: white;
   border-radius: 11px;
+  
 }
 
 .mainCon{
@@ -150,12 +151,17 @@ button {
 }
 
 @media screen and (max-width:375px) {
-  .container {
-    margin: 5px; /* Adjust margin for smaller screens */
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
-  button {
-    font-size: 14px; /* Further reduce button font size */
-    padding: 15px 40px; /* Adjust button padding */
+
+  .container {
+    padding: 10px; /* Adjust padding to reduce spacing */
+  }
+
+  /* Specify how grid rows should behave */
+  .container {
+    grid-template-rows: repeat(auto-fit, minmax(150px, auto)); /* Adjust as needed */
   }
 }
 
