@@ -187,6 +187,10 @@ button {
   .rightBottomCon{
     border-radius: 0px 0px 12px 12px;
   }
+  button {
+    font-size: 15px;
+    padding: 18px 70px;
+  }
 }
 
 
@@ -210,6 +214,10 @@ button {
 
   .rightBottomCon{
     border-radius: 0px 0px 12px 12px;
+  }
+  button {
+    font-size: 15px;
+    padding: 18px 70px;
   }
 }
 
