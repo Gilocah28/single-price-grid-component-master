@@ -165,8 +165,34 @@ button {
   .rightBottomCon{
     border-radius: 0px 0px 12px 12px;
   }
-  button{
-    padding: 1.5rem 8rem;
-  }
 }
+
+@media screen and (max-width:375px) {
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(1, 350px);
+    grid-template-rows: repeat(2,400px);
+    grid-template-rows: 450px;
+  }
+  .leftBottomCon{
+    border-radius: 0px;
+  }
+
+  .rightBottomCon{
+    border-radius: 0px 0px 12px 12px;
+  }
+  bottun{
+
+  }
+
+}
+
 
