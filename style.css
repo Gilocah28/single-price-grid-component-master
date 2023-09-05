@@ -143,7 +143,7 @@ button {
     margin-top: 60px;
     display: grid;
     height: auto;
-    grid-template-columns: repeat(1, 500px);
+    grid-template-columns: repeat(auto-fit, 500px);
     grid-template-rows: 400px;
   }
   .leftBottomCon{
@@ -160,7 +160,7 @@ button {
     margin-top: 60px;
     display: grid;
     height: auto;
-    grid-template-columns: repeat(1, 350px);
+    grid-template-columns: repeat(auto-fit, 350px);
     grid-template-rows: 450px;
   }
   .leftBottomCon{
@@ -182,7 +182,7 @@ button {
     margin-top: 60px;
     display: grid;
     height: auto;
-    grid-template-columns: repeat(1, 300px);
+    grid-template-columns: repeat(auto-fit, 300px);
     grid-template-rows: 500px;
   }
   .leftBottomCon{
