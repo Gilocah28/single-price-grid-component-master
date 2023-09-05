@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  Font-size: 16px;
+}
+body {
+  background: hsl(204, 43%, 93%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.10);
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(2,300px);
+  color: white;
+  border-radius: 11px;
+}
+
+.mainCon{
+  grid-column: 1 / -1;
+  padding: 50px 70px 50px 50px;
+  background-color: white;
+  border-radius: 10px 10px 0px 0px ;
+}
+
+.mainCon > h3 {
+  font-size: 2rem;
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.content > p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  line-height: 25px;
+  
+}
+
+.colortext{
+  color: hsl(71, 73%, 54%);
+}
+
+.lightText{
+  color: hsl(218, 22%, 67%);
+}
+
+
+.leftBottomCon{
+  grid-column: 2 / 1;
+  padding: 50px;
+  background: hsl(179, 62%, 43%);
+  border-radius: 0px 0px 0px 10px ;
+}
+
+.leftBottomCon > h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.price {
+  font-size: 2rem;
+  line-height: 30px;
+  margin-bottom: 1rem;
+}
+span{
+  color: hsl(204, 43%, 93%);
+  vertical-align: middle;
+}
+.full{
+  margin-bottom: 3rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+button {
+  color: white;
+  background: hsl(71, 73%, 54%);
+  border: none;
+  padding: 0.8rem 5.5rem;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.16);
+}
+
+.rightBottomCon{
+  grid-column: -1 / -2;
+  padding: 50px;
+  background: hsla(179, 62%, 43%, 0.753);
+  border-radius: 0px 0px 10px 0px ;
+}
+
+.rightBottomCon > h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.rightText > p {
+  letter-spacing: 1px;
+  padding-right: 2rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width:800px) {
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: 300px;
+  }
+  .leftBottomCon{
+    border-radius: 0px;
+  }
+
+  .rightBottomCon{
+    border-radius: 0px 0px 12px 12px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(1, 500px);
+    grid-template-rows: repeat(2,400px);
+    grid-template-rows: 400px;
+  }
+  .leftBottomCon{
+    border-radius: 0px;
+  }
+
+  .rightBottomCon{
+    border-radius: 0px 0px 12px 12px;
+  }
+  button{
+    padding: 1.5rem 8rem;
+  }
+}
+
